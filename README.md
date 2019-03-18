@@ -62,4 +62,12 @@ set reportportal_launch_name="My new launch name"
 # execute tests
 ```
 
-`reportportal_` prefix is used for naming variables, and `_` is used as delimeter. For example to override `Server.Authentication.Uuid` parameter, we need specify `ReportPortal_Server_Authentication_Uuid` in environment variables. 
+`reportportal_` prefix is used for naming variables, and `_` is used as delimeter. For example to override `Server.Authentication.Uuid` parameter, we need specify `ReportPortal_Server_Authentication_Uuid` in environment variables.
+
+## Setting Tags with environment variables
+When setting tags via `reportportal_launch_tags`, use `;` as a separator.
+
+```cmd
+set reportportal_launch_tags="my;custom;tags"
+# execute tests
+```
